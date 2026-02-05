@@ -1,0 +1,115 @@
+@import './Common.css';
+
+.especialidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.especialidade-card {
+  padding: var(--spacing-xl);
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.especialidade-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.especialidade-card__icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: var(--spacing-md);
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.especialidade-card__nome {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+}
+
+.especialidade-card__descricao {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.especialidade-card__atuacao h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.especialidade-card__atuacao ul {
+  list-style: none;
+  padding: 0;
+}
+
+.especialidade-card__atuacao li {
+  padding: var(--spacing-xs) 0;
+  padding-left: var(--spacing-md);
+  position: relative;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.especialidade-card__atuacao li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.diferencial-item {
+  text-align: center;
+}
+
+.diferencial-item__number {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-bottom: var(--spacing-md);
+}
+
+.diferencial-item__title {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.diferencial-item__description {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .especialidades-grid,
+  .diferenciais-grid {
+    grid-template-columns: 1fr;
+  }
+}

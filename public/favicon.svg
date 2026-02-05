@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Roof -->
+  <path d="M32 6L2 30l6 0 0 0L32 10l24 20h6L32 6z" fill="#004D7A"/>
+  <!-- House body -->
+  <rect x="10" y="30" width="44" height="28" rx="2" fill="#0066A1"/>
+  <!-- Heart -->
+  <path d="M32 30c-2-3-6-4-8.5-2s-2.5 6.5 0 9.5L32 47l8.5-9.5c2.5-3 2.5-7.5 0-9.5S34 27 32 30z" fill="white"/>
+  <!-- Plus sign inside heart -->
+  <rect x="30.5" y="33" width="3" height="9" rx="1" fill="#00A3E0"/>
+  <rect x="28" y="36" width="8" height="3" rx="1" fill="#00A3E0"/>
+</svg>

@@ -1,0 +1,125 @@
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-white);
+  z-index: 1000;
+  transition: box-shadow var(--transition-normal);
+}
+
+.header--scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--spacing-md);
+  min-height: 70px;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+}
+
+.logo-plus {
+  color: var(--color-secondary);
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-lg);
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  position: relative;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+  padding: var(--spacing-xs) 0;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width var(--transition-normal);
+}
+
+.nav__link:hover,
+.nav__link--active {
+  color: var(--color-primary);
+}
+
+.nav__link:hover::after,
+.nav__link--active::after {
+  width: 100%;
+}
+
+.nav__toggle,
+.nav__close {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--color-text);
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-xl);
+    padding: var(--spacing-2xl) var(--spacing-md);
+    transition: right var(--transition-normal);
+  }
+
+  .nav__menu--active {
+    right: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__close {
+    display: block;
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+  }
+}
+
+/* Add padding to body to account for fixed header */
+body {
+  padding-top: 70px;
+}

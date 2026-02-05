@@ -1,0 +1,105 @@
+@import './Common.css';
+
+.manifesto {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.manifesto__content {
+  margin-top: var(--spacing-xl);
+}
+
+.manifesto__quote {
+  position: relative;
+  padding: var(--spacing-xl);
+  background-color: var(--color-accent);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.quote-icon {
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  line-height: 1.5;
+}
+
+.manifesto__list {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-lg) 0;
+}
+
+.manifesto__list li {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.manifesto__list li:last-child {
+  border-bottom: none;
+}
+
+.pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.pilar-card {
+  padding: var(--spacing-xl);
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: transform var(--transition-normal);
+}
+
+.pilar-card:hover {
+  transform: translateY(-5px);
+}
+
+.pilar-card__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-md);
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.pilar-card__title {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+}
+
+.pilar-card__description {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.compromisso {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .quote-text {
+    font-size: 1.25rem;
+  }
+
+  .pilares-grid {
+    grid-template-columns: 1fr;
+  }
+}
