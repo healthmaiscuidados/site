@@ -38,7 +38,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-2">
-                <a href="tel:+5521969891130" className="text-gray-300 transition-colors duration-200 hover:text-white cursor-pointer">(21) 96989-1130</a>
+                <a href="tel:+5521979828951" className="text-gray-300 transition-colors duration-200 hover:text-white cursor-pointer">(21) 97982-8951</a>
               </li>
             </ul>
           </div>
@@ -46,7 +46,6 @@ const Footer = () => {
           <div className="min-w-0">
             <h4 className="text-base font-semibold mb-4 text-white">Horário de Atendimento</h4>
             <p className="text-gray-300 leading-[1.8]">
-              Atendimento 24 horas<br />
               7 dias por semana<br />
               Retaguarda clínica sempre disponível
             </p>

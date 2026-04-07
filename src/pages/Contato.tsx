@@ -27,7 +27,7 @@ const Contato = () => {
 
           <div className="flex flex-col gap-8">
             <a
-              href="tel:+5521969891130"
+              href="tel:+5521979828951"
               className="flex gap-4 sm:gap-6 p-6 sm:p-8 bg-white border-2 border-gray-200 rounded-lg transition-all duration-300 hover:border-primary hover:shadow-custom-md cursor-pointer no-underline"
             >
               <div className="shrink-0 w-14 h-14 flex items-center justify-center bg-accent rounded-full text-primary">
@@ -36,9 +36,8 @@ const Contato = () => {
               <div className="min-w-0">
                 <h3 className="text-lg font-semibold mb-2 text-text">Telefone</h3>
                 <p className="text-lg font-semibold text-primary mb-2">
-                  (21) 96989-1130
+                  (21) 97982-8951
                 </p>
-                <p className="text-sm text-text-light">Atendimento 24 horas</p>
               </div>
             </a>
 
@@ -54,12 +53,11 @@ const Contato = () => {
                 <p className="text-lg font-semibold text-primary mb-2 break-all">
                   contato@healthmaiscuidados.com
                 </p>
-                <p className="text-sm text-text-light">Resposta em até 24h</p>
               </div>
             </a>
 
             <a
-              href="https://wa.me/5521969891130"
+              href="https://wa.me/5521979828951"
               className="flex gap-4 sm:gap-6 p-6 sm:p-8 bg-linear-to-br from-whatsapp to-whatsapp-dark border-2 border-whatsapp rounded-lg text-white transition-all duration-300 hover:shadow-custom-md cursor-pointer no-underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -83,3 +81,4 @@ const Contato = () => {
 };
 
 export default Contato;
+
