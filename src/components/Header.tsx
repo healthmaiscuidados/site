@@ -37,7 +37,7 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 bg-white z-1000 transition-shadow duration-300 ${isScrolled ? 'shadow-custom-md' : ''}`}>
       <nav className="w-full max-w-[1200px] mx-auto px-6 flex items-center justify-between min-h-[70px]">
         <Link to="/" className="no-underline cursor-pointer hover:opacity-80 transition-opacity">
-          <img src="/HEALTHMAIS - LOGO.png" alt="Health+ Cuidados" className="h-10" />
+          <img src="/Logo Atualizada - Health+ (2)_preview_rev_1 (6).png" alt="Health+ Atendimento Domiciliar" className="h-12" />
         </Link>
 
         <div className={`md:static md:flex md:bg-transparent md:shadow-none md:p-0 md:h-auto md:w-auto md:max-w-none fixed top-0 ${isMenuOpen ? 'right-0' : '-right-full'} w-[70%] max-w-[300px] h-screen bg-white shadow-custom-xl p-16 pt-16 transition-all duration-300`}>

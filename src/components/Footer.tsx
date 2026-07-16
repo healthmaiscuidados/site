@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-full max-w-[1200px] mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="min-w-0">
-            <img src="/HEALTHMAIS - LOGO.png" alt="Health+ Cuidados" className="h-10 mb-4 brightness-0 invert" />
+            <img src="/Logo Atualizada - Health+ (2)_preview_rev_1 (6).png" alt="Health+ Atendimento Domiciliar" className="h-12 mb-4 brightness-0 invert" />
             <p className="text-gray-300 leading-relaxed">
               Cuidado em casa com segurança, presença e responsabilidade.
             </p>
